@@ -1,0 +1,20 @@
+{
+  "hidden_dim": 256,
+  "num_layers": 3,
+  "num_heads": 4,
+  "kernel_size": 3,
+  "seq_len": 24,
+  "train_stride": 12,
+  "optimizer": "AdamW",
+  "learning_rate": 0.0005,
+  "weight_decay": 0.0001,
+  "pointwise_loss": "huber",
+  "beta": 0.1,
+  "missing_penalty": 2.0,
+  "temporal_weight": 0.1,
+  "wind_vector_weight": 0.025,
+  "adaptive_temporal_scale": true,
+  "feature_weights": [1.0, 1.0, 1.0, 1.0, 1.0],
+  "temporal_feature_weights": [1.0, 1.0, 0.5, 0.5, 1.0],
+  "temporal_dilation_rates": [7, 3, 1]
+}
